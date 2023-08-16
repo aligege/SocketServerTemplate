@@ -1,0 +1,58 @@
+{
+    "third_cfg":
+    {
+        "email":
+        {
+            "host": "smtp.live.com",
+            "port": 587,
+            "secure": false,
+            "auth": 
+            {
+                "user": "chengang01@live.com",
+                "pass": "cg123!@#"
+            },
+            "from":"OpenSocial <chengang01@live.com>"
+        },
+        "cgmq":
+        {
+            "identity":"texas",
+            "host":"127.0.0.1",
+            "port":8888
+        }
+    },
+    "local_host":"127.0.0.1",
+    "internet_host":"www.eryinet.com",
+    "db":
+    {
+        "redis":
+        {
+            "port":6379,
+            "host":"www.eryinet.com",
+            "database":1,
+            "open":true
+        },
+        "mongo":
+        {
+            "open":true,
+            "host":"www.eryinet.com",
+            "port":27017,
+            "options":
+            {
+                "auth":
+                {
+                    "username":"eryigame",
+                    "password":"eryigame@123"
+                },
+                "authSource":"texas",
+                "maxIdleTimeMS":600000,
+                "maxPoolSize":100,
+                "minPoolSize": 10,
+                "maxConnecting": 100,
+                "waitQueueTimeoutMS":600000
+            },
+            "database" : "texas"
+        }
+    },
+    "idmod":-1,
+    "port":6011
+}

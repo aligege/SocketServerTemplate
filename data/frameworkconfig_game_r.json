@@ -1,0 +1,56 @@
+{
+    "third_cfg":
+    {
+        "email":
+        {
+            "host": "smtp.live.com",
+            "port": 587,
+            "secure": false,
+            "auth": 
+            {
+                "user": "chengang01@live.com",
+                "pass": "cg123!@#"
+            },
+            "from":"OpenSocial <chengang01@live.com>"
+        },
+        "cgmq":
+        {
+            "identity":"texas",
+            "host":"127.0.0.1",
+            "port":8888
+        }
+    },
+    "local_host":"127.0.0.1",
+    "internet_host":"119.3.111.121",
+    "db":
+    {
+        "redis":
+        {
+            "open":true,
+            "host":"192.168.0.215",
+            "port":6379,
+            "database":1
+        },
+        "mongo":
+        {
+            "open":true,
+            "host":"192.168.0.215",
+            "port":27017,
+            "options":
+            {
+                "auth":
+                {
+                    "username":"root",
+                    "password":"texas123!@#"
+                },
+                "maxIdleTimeMS":600000,
+                "maxPoolSize":200,
+                "minPoolSize": 10,
+                "maxConnecting": 200
+            },
+            "database" : "texas"
+        }
+    },
+    "idmod":0,
+    "port":6101
+}
